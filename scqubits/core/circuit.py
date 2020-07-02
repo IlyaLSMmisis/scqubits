@@ -447,6 +447,7 @@ class Circuit(base.QubitBaseClass):
         hamiltonian_mat += np.diag(self.calculate_charge_potential().ravel())
         return hamiltonian_mat
 
+        
     def find_element(self, element_name):
         """
         Find an element inside the circuit with the specified name.
@@ -456,6 +457,7 @@ class Circuit(base.QubitBaseClass):
             if element.name == element_name:
                 return element
             
+    
     def find_variable(self, variable_name):
         """
         Find a variable of the circuit with the specified name.
@@ -465,6 +467,7 @@ class Circuit(base.QubitBaseClass):
             if variable.name == variable_name:
                 return variable
         
+            
     def add_element(self, element, node_names):
         """
         Connect an element to the circuit.
