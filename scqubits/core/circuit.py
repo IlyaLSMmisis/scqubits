@@ -448,6 +448,7 @@ class Circuit(base.QubitBaseClass):
         return hamiltonian_mat
 
         
+    
     def find_element(self, element_name):
         """
         Find an element inside the circuit with the specified name.
